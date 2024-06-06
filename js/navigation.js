@@ -1,17 +1,9 @@
 window.showMenu = function () {
-  console.log("Showing Menu");
-
-  const menu = getMenu();
+  const menu = document.getElementById("menu");
   menu.classList.add("opened-menu");
 };
 
 window.hideMenu = function () {
-  console.log("Hide Menu");
-
-  const menu = getMenu();
+  const menu = document.getElementById("menu");
   menu.classList.remove("opened-menu");
 };
-
-function getMenu() {
-  return document.getElementById("menu");
-}

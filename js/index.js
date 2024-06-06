@@ -1,6 +1,8 @@
 import { state } from "./state.js";
 
-console.log("JS Running");
+window.addEventListener("load", function () {
+  renderSelectedTopic();
+});
 
 /**
  * Explanation why it's important to assign a function to window object
@@ -8,15 +10,7 @@ console.log("JS Running");
  * https://stackoverflow.com/questions/63655960/how-can-i-call-a-function-from-javascript-module-in-html-onclick
  */
 
-window.addEventListener("load", function () {
-  renderSelectedTopic();
-});
-
-
-
 window.showNextTopic = function () {
-  console.log("Show next topic");
-
   const selectedTopicIndex = state.topics.findIndex(
     (topic) => topic.id === state.selectedTopic.id,
   );

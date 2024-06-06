@@ -1,7 +1,13 @@
-export function getCardTemplate() {
+export function getQuestionCardTemplate() {
   return document
     .getElementById("question-card-template")
     .content.cloneNode(true);
+}
+
+export function getTestingCardTemplate() {
+  return document
+      .getElementById("testing-card-template")
+      .content.cloneNode(true);
 }
 
 export function getTopicInfoTemplate() {

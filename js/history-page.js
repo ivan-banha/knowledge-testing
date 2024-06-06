@@ -1,7 +1,5 @@
 import { state } from "./state.js";
 
-console.log("testing history");
-
 window.onload = function () {
   renderHistory();
 };

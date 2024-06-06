@@ -28,17 +28,23 @@
 }
 
 .card-options {
+  color: #fff;
+  font-size: 18px;
 }
 
 .card-options label {
 }
 
 .correct-option {
-  border: 1px solid green;
+  color: #3fb42c;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .wrong-option {
-  border: 1px solid red;
+  color: #cb1515;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .card-question-selector {
@@ -59,4 +65,17 @@
   border: 1px solid #d9d9d9;
   background: #d9d9d9;
   cursor: unset;
+}
+
+.card-result-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 44px;
+  transform: translateY(-50%);
+  height: 48px;
+}
+
+.visible-card-result-icon {
+  display: block;
 }

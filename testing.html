@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Testing</title>
     <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/qusetions-style.css" />
+    <link rel="stylesheet" href="styles/questions-style.css" />
     <link rel="stylesheet" href="styles/question-card.css" />
-    <script src="js/testing/testing-room.js" type="module"></script>
+    <script src="js/testing-page.js" type="module"></script>
   </head>
   <body>
     <template id="testing-card-template">
@@ -15,9 +15,13 @@
         <fieldset>
           <legend class="card-title"></legend>
 
-          <div class="card-options">
-            <input type="radio" id="option" name="question" value="answer" />
-            <label for="option"></label>
+          <div class="card-options-container">
+            <div class="card-options">
+              <input type="radio" id="option" name="question" value="answer" />
+              <label for="option"></label>
+            </div>
+
+            <img class="card-result-icon" src="#" alt="Відповідь" />
           </div>
         </fieldset>
       </li>

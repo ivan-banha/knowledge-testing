@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Questions</title>
     <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/qusetions-style.css" />
+    <link rel="stylesheet" href="styles/questions-style.css" />
     <link rel="stylesheet" href="styles/question-card.css" />
-    <script src="js/questions/questions.js" type="module"></script>
+    <script src="js/questions-page.js" type="module"></script>
   </head>
   <body>
     <template id="topic-info-template">
@@ -45,7 +45,9 @@
         <ul id="question-cards"></ul>
 
         <div class="button-submit-questions">
-          <a href="/testing" class="submit"> Почати тест </a>
+          <button disabled class="submit" onclick="startTesting()">
+            Почати тест
+          </button>
         </div>
       </div>
     </section>
