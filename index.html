@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="js/navigation.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
+  </head>
+  <body>
+    <div class="main-menu">
+      <div class="topic-selection">
+        <nav class="navigation">
+          <a href="/">
+            <img src="assets/ball.png" alt="Ball image" />
+          </a>
+
+          <button onclick="showMenu()">
+            <img class="menu-open" src="assets/menu.png" alt="Меню" />
+          </button>
+
+          <div id="menu" class="menu">
+            <ul>
+              <li>
+                <a href="/">Головна</a>
+              </li>
+              <li>
+                <a href="/history">Історія тестувань</a>
+              </li>
+              <li>
+                <a href="/about">Про проект</a>
+              </li>
+            </ul>
+
+            <button onclick="hideMenu()">
+              <img src="assets/close.png" alt="Close menu" />
+            </button>
+          </div>
+        </nav>
+
+        <div class="topic-info">
+          <div class="topic-carousel">
+            <button
+              class="carousel-arrow carousel-arrow-left"
+              onclick="showPreviousTopic()"
+            >
+              <img src="assets/arrow-left.png" alt="Попередній тест" />
+            </button>
+            <h1 id="topic-title"></h1>
+            <button
+              class="carousel-arrow carousel-arrow-right"
+              onclick="showNextTopic()"
+            >
+              <img src="assets/arrow-right.png" alt="Наступний тест" />
+            </button>
+          </div>
+          <p id="topic-description" class="text-second-level"></p>
+        </div>
+      </div>
+      <div class="button-container">
+        <a id="start-test-button" class="start-test-button" href="#">
+          Перейти до
+          <br />
+          вибору тестування
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

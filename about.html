@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="js/navigation.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
+  </head>
+  <body>
+    <div class="main-menu">
+      <div class="topic-selection">
+        <nav class="navigation">
+          <a href="/">
+            <img src="assets/ball.png" alt="Ball image" />
+          </a>
+
+          <button onclick="showMenu()">
+            <img class="menu-open" src="assets/menu.png" alt="Меню" />
+          </button>
+
+          <div id="menu" class="menu">
+            <ul>
+              <li>
+                <a href="/">Головна</a>
+              </li>
+              <li>
+                <a href="/history">Історія тестувань</a>
+              </li>
+              <li>
+                <a href="/about">Про проект</a>
+              </li>
+            </ul>
+
+            <button onclick="hideMenu()">
+              <img src="assets/close.png" alt="Close menu" />
+            </button>
+          </div>
+        </nav>
+
+        <div>About page</div>
+        <div>Need some content!</div>
+      </div>
+    </div>
+  </body>
+</html>

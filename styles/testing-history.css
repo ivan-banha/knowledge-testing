@@ -1,0 +1,43 @@
+#history-items-container {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.history-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 94px;
+  background: #d83c3c;
+  border-radius: 25px;
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  padding: 16px 48px;
+}
+
+.triangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 147px solid #d9d9d9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.history-order {
+  position: absolute;
+  color: black;
+  font-size: 45px;
+  font-weight: 400;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

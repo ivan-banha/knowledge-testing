@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/qusetions-style.css" />
+    <link rel="stylesheet" href="styles/question-card.css" />
+    <script src="js/testing/testing-room.js" type="module"></script>
+  </head>
+  <body>
+    <template id="testing-card-template">
+      <li class="card">
+        <fieldset>
+          <legend class="card-title"></legend>
+
+          <div class="card-options">
+            <input type="radio" id="option" name="question" value="answer" />
+            <label for="option"></label>
+          </div>
+        </fieldset>
+      </li>
+    </template>
+    <template id="testing-results-template">
+      <p></p>
+      <button class="submit" onclick="goHome()">Перейти на головну</button>
+    </template>
+
+    <nav class="navigation">
+      <a href="/">
+        <img src="assets/ball.png" alt="Ball image" />
+      </a>
+    </nav>
+
+    <section class="questions-container">
+      <div id="topic-info" class="questions-information"></div>
+
+      <div class="questions-content">
+        <ul id="question-cards"></ul>
+
+        <div class="button-submit-questions">
+          <button class="submit" onclick="checkAnswers()">
+            Перевірити правильність
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/testing-history.css" />
+    <script src="js/navigation.js" type="module"></script>
+    <script src="js/testing-history.js" type="module"></script>
+  </head>
+  <body>
+    <template id="history-item-template">
+      <div class="history-item">
+        <p class="history-topic">Тема: Test</p>
+        <div class="triangle"></div>
+        <span class="history-order">4</span>
+        <p class="history-scores">Бали: 3/5</p>
+      </div>
+    </template>
+
+    <div class="main-menu">
+      <nav class="navigation">
+        <a href="/">
+          <img src="assets/ball.png" alt="Ball image" />
+        </a>
+
+        <h1>Історія тестування</h1>
+      </nav>
+    </div>
+
+    <div id="history-items-container"></div>
+  </body>
+</html>

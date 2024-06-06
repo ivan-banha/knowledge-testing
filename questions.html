@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/qusetions-style.css" />
+    <link rel="stylesheet" href="styles/question-card.css" />
+    <script src="js/questions/questions.js" type="module"></script>
+  </head>
+  <body>
+    <template id="topic-info-template">
+      <h1></h1>
+      <p></p>
+    </template>
+
+    <template id="question-card-template">
+      <li class="card">
+        <p class="card-title"></p>
+
+        <div class="card-actions">
+          <div class="card-question-selector">
+            <button class="change-question">
+              <img class="arrow" src="assets/arrow-right-mini.png" alt="" />
+              <img class="arrow" src="assets/arrow-left-mini.png" alt="" />
+            </button>
+            <p class="attempts-counter"></p>
+          </div>
+          <button class="confirm-question" disabled>Підтвердити питання</button>
+        </div>
+      </li>
+    </template>
+
+    <nav class="navigation">
+      <a href="/">
+        <img src="assets/ball.png" alt="Ball image" />
+      </a>
+    </nav>
+
+    <section class="questions-container">
+      <div id="topic-info" class="questions-information"></div>
+
+      <div class="questions-content">
+        <ul id="question-cards"></ul>
+
+        <div class="button-submit-questions">
+          <a href="/testing" class="submit"> Почати тест </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
